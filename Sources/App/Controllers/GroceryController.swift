@@ -11,15 +11,17 @@ import Vapor
 
 struct GroceryController: RouteCollection {
 	func boot(routes: RoutesBuilder) throws {
-		let apiUsersUserID = routes
-			.grouped("api", "users", ":userID")
+		let protectedAPI = routes
 			.grouped(JWTAuthenticator())
+			.grouped("api")
+
+		let usersUserID = protectedAPI.grouped("users", ":userID")
 
 #if false
-		apiUsersUserID.get("grocery-categories-with-items", use: getGroceryCategoriesWithItems)
+		usersUserID.get("grocery-categories-with-items", use: getGroceryCategoriesWithItems)
 #endif
 
-		let groceryCategories = apiUsersUserID.grouped("grocery-categories")
+		let groceryCategories = usersUserID.grouped("grocery-categories")
 		groceryCategories.get (use: getGroceryCategories)
 		groceryCategories.post(use: saveGroceryCategory)
 
