@@ -8,7 +8,7 @@
 import Vapor
 
 struct JWTAuthenticator: AsyncRequestAuthenticator {
-	func authenticate(request: Vapor.Request) async throws {
+	func authenticate(request: Request) async throws {
 		try request.jwt.verify(as: AuthenticationPayload.self)
 	}
 }

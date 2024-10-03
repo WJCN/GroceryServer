@@ -1,13 +1,13 @@
 {
-  "originHash" : "8363f96672631c353635bf1cb8aa8a956ae80c574f586498faaecfe3a4c575e9",
+  "originHash" : "f1ef73ea3d94e8a6b11b1aec5217bc42c2151623d5e1f20a84f6147c09b92c5f",
   "pins" : [
     {
       "identity" : "async-http-client",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swift-server/async-http-client.git",
       "state" : {
-        "revision" : "6df8e1c17e68f0f93de2443b8c8cafca9ddcc89a",
-        "version" : "1.22.2"
+        "revision" : "64abc77edf1ef81e69bd90a2ac386de615c8e8ea",
+        "version" : "1.23.0"
       }
     },
     {
@@ -61,7 +61,7 @@
       "location" : "https://github.com/WJCN/GroceryDTOs.git",
       "state" : {
         "branch" : "main",
-        "revision" : "97d77b5a55794d5b5d5271733dcc0b009b3c7f17"
+        "revision" : "39277d1d261c3b20c83d65dbdbf6ddd31cbf81e9"
       }
     },
     {
@@ -168,8 +168,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-crypto.git",
       "state" : {
-        "revision" : "81bee98e706aee68d39ed5996db069ef2b313d62",
-        "version" : "3.7.1"
+        "revision" : "ffca28be3c9c6a86a579949d23f68818a4b9b5d8",
+        "version" : "3.8.0"
       }
     },
     {
@@ -204,8 +204,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "1b33db2dea6a64d5b619b9e888175133c6d7f410",
-        "version" : "2.73.0"
+        "revision" : "665206000b8307cab5ac51203d29b0f232d7e31b",
+        "version" : "2.74.0"
       }
     },
     {
