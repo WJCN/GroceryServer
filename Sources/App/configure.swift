@@ -28,7 +28,7 @@ public func configure(_ application: Application) async throws {
 	// automatically run migrations on startup
 	try await application.autoMigrate()
 
-	application.jwt.signers.use(.hs512(key: "Secret Key"))
+	application.jwt.signers.use(.hs512(key: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))
 
 	// register routes
 	try routes(application)
