@@ -6,7 +6,7 @@ public func configure(_ application: Application) async throws {
 	// uncomment to serve files from /Public folder
 	// application.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
 
-	application
+	try application
 		.databases
 		.use(
 			.postgres(
@@ -16,7 +16,7 @@ public func configure(_ application: Application) async throws {
 					username: Environment.get("DATABASE_USERNAME") ?? "",
 					password: Environment.get("DATABASE_PASSWORD") ?? "",
 					database: Environment.get("DATABASE")          ?? "",
-					tls: .prefer(try NIOSSLContext(configuration: .clientDefault))
+					tls: .prefer(NIOSSLContext(configuration: .clientDefault))
 				)
 			),
 			as: .psql
@@ -28,7 +28,7 @@ public func configure(_ application: Application) async throws {
 	// automatically run migrations on startup
 	try await application.autoMigrate()
 
-	application.jwt.signers.use(.hs512(key: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))
+	application.jwt.signers.use(.hs512(key: Environment.get("JWT_SIGNING_KEY") ?? ""))
 
 	// register routes
 	try routes(application)
