@@ -1,3 +1,5 @@
+#warning("The PostgreSQL Transport Layer Security (TLS) is disabled.")
+
 import FluentPostgresDriver
 import Vapor
 
@@ -6,7 +8,7 @@ public func configure(_ application: Application) async throws {
 	// uncomment to serve files from /Public folder
 	// application.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
 
-	try application
+	application
 		.databases
 		.use(
 			.postgres(
@@ -16,7 +18,7 @@ public func configure(_ application: Application) async throws {
 					username: Environment.get("DATABASE_USERNAME") ?? "",
 					password: Environment.get("DATABASE_PASSWORD") ?? "",
 					database: Environment.get("DATABASE")          ?? "",
-					tls: .prefer(NIOSSLContext(configuration: .clientDefault))
+					tls:     .disable
 				)
 			),
 			as: .psql

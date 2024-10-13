@@ -1,5 +1,5 @@
 {
-  "originHash" : "3310277c1c1bd2c0f9a87f344a110468a6b015009811ba4cd630d1854c044267",
+  "originHash" : "ff19d8fa4c269c560c1288734d411d9472e6ab5fa3046494b634e948a4558e5e",
   "pins" : [
     {
       "identity" : "async-http-client",
@@ -61,7 +61,7 @@
       "location" : "https://github.com/WJCN/GroceryDTOs.git",
       "state" : {
         "branch" : "main",
-        "revision" : "39277d1d261c3b20c83d65dbdbf6ddd31cbf81e9"
+        "revision" : "d41448ac6971ab3791f9f13f399495b47eac4090"
       }
     },
     {
