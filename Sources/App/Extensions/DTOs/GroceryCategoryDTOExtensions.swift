@@ -13,8 +13,8 @@ extension GroceryCategoryResponseDTO: @retroactive Content {
 		try self.init(
 			id:           groceryCategory.requireID(),
 			title:        groceryCategory.title,
-			color:        groceryCategory.color
-		//	groceryItems: groceryCategory.groceryItems.map(GroceryItemResponseDTO.init)
+			color:        groceryCategory.color,
+			groceryItems: groceryCategory.$groceryItems.value?.map(GroceryItemResponseDTO.init) ?? []
 		)
 	}
 }

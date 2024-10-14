@@ -96,7 +96,6 @@ struct GroceryController: RouteCollection {
 			.map(GroceryCategoryResponseDTO.init)
 	}
 
-#if false
 	@Sendable
 	private func getGroceryCategoriesWithItems(request: Request) async throws -> [GroceryCategoryResponseDTO] {
 		guard let userID = request.parameters.get("userID", as: UUID.self)
@@ -117,7 +116,6 @@ struct GroceryController: RouteCollection {
 			.all()
 			.map(GroceryCategoryResponseDTO.init)
 	}
-#endif
 
 	@Sendable
 	private func getGroceryItems(request: Request) async throws -> [GroceryItemResponseDTO] {
