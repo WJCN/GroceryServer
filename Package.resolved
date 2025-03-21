@@ -1,13 +1,13 @@
 {
-  "originHash" : "ff19d8fa4c269c560c1288734d411d9472e6ab5fa3046494b634e948a4558e5e",
+  "originHash" : "8b176fdbdc9f31c7b48aec078cfdb34076c582f197826b3ea4f1309b282e014a",
   "pins" : [
     {
       "identity" : "async-http-client",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swift-server/async-http-client.git",
       "state" : {
-        "revision" : "0a9b72369b9d87ab155ef585ef50700a34abf070",
-        "version" : "1.23.1"
+        "revision" : "333f51104b75d1a5b94cb3b99e4c58a3b442c9f7",
+        "version" : "1.25.2"
       }
     },
     {
@@ -58,7 +58,7 @@
     {
       "identity" : "grocerydtos",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/WJCN/GroceryDTOs.git",
+      "location" : "https://github.com/WJCN/GroceryDTOs",
       "state" : {
         "branch" : "main",
         "revision" : "d41448ac6971ab3791f9f13f399495b47eac4090"
@@ -182,6 +182,15 @@
       }
     },
     {
+      "identity" : "swift-distributed-tracing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-distributed-tracing.git",
+      "state" : {
+        "revision" : "a64a0abc2530f767af15dd88dda7f64d5f1ff9de",
+        "version" : "1.2.0"
+      }
+    },
+    {
       "identity" : "swift-http-types",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-http-types",
@@ -213,8 +222,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "914081701062b11e3bb9e21accc379822621995e",
-        "version" : "2.76.1"
+        "revision" : "c51907a839e63ebf0ba2076bba73dd96436bd1b9",
+        "version" : "2.81.0"
       }
     },
     {
@@ -263,6 +272,15 @@
       }
     },
     {
+      "identity" : "swift-service-context",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-service-context.git",
+      "state" : {
+        "revision" : "8946c930cae601452149e45d31d8ddfac973c3c7",
+        "version" : "1.2.0"
+      }
+    },
+    {
       "identity" : "swift-service-lifecycle",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swift-server/swift-service-lifecycle.git",
@@ -285,8 +303,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vapor/vapor.git",
       "state" : {
-        "revision" : "4d3bc6ce08b72a14c9879810cf0be455ca98f1fb",
-        "version" : "4.106.1"
+        "revision" : "f6459d6417d4968f91979224dd8fd38fa99b042c",
+        "version" : "4.114.0"
       }
     },
     {

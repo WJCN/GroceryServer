@@ -10,15 +10,15 @@ let package = Package(
 	],
 	dependencies: [
 		// 💧 A Swift Server Web Framework
-		.package(url: "https://github.com/vapor/vapor.git",                  from: "4.99.3"),
+		.package(url: "https://github.com/vapor/vapor",                  from: "4.0.0"),
 		// 🗄 An ORM for SQL and NoSQL Databases
-		.package(url: "https://github.com/vapor/fluent.git",                 from: "4.9.0"),
+		.package(url: "https://github.com/vapor/fluent",                 from: "4.0.0"),
 		// 🐘 Fluent Driver for Postgres
-		.package(url: "https://github.com/vapor/fluent-postgres-driver.git", from: "2.8.0"),
+		.package(url: "https://github.com/vapor/fluent-postgres-driver", from: "2.0.0"),
 		// 🔑 JSON Web Tokens
-		.package(url: "https://github.com/vapor/jwt.git",                    from: "4.0.0"),
+		.package(url: "https://github.com/vapor/jwt",                    from: "4.0.0"),
 		// 📈 Grocery Data Transfer Objects
-		.package(url: "https://github.com/WJCN/GroceryDTOs.git",             branch: "main"),
+		.package(url: "https://github.com/WJCN/GroceryDTOs",             branch: "main"),
 	],
 	targets: [
 		.executableTarget(
