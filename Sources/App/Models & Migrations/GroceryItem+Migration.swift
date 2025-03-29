@@ -77,7 +77,7 @@ final class GroceryItem: Model, Validatable, @unchecked Sendable {
 // MARK: -
 
 final class GroceryItemMigration: AsyncMigration {
-	func prepare(on database: Database) async throws {
+	func prepare(on database: any Database) async throws {
 		try await database
 			.schema(GroceryItem.schema)
 			.id()
@@ -88,7 +88,7 @@ final class GroceryItemMigration: AsyncMigration {
 			.create()
 	}
 
-	func revert(on database: Database) async throws {
+	func revert(on database: any Database) async throws {
 		try await database
 			.schema(GroceryItem.schema)
 			.delete()

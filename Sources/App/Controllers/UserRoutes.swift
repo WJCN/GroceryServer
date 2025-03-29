@@ -11,7 +11,7 @@ import JWT
 import Vapor
 
 struct UserRoutes: RouteCollection {
-	func boot(routes: RoutesBuilder) throws {
+	func boot(routes: any RoutesBuilder) throws {
 		let api = routes.grouped("api")
 		api.post("register", use: register)
 		api.post("sign-in",  use: signIn)

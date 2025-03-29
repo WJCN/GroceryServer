@@ -10,7 +10,7 @@ import GroceryDTOs
 import Vapor
 
 struct GroceryController: RouteCollection {
-	func boot(routes: RoutesBuilder) throws {
+	func boot(routes: any RoutesBuilder) throws {
 		let protectedAPI = routes
 			.grouped(JWTAuthenticator())
 			.grouped("api")
